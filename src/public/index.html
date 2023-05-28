@@ -11,24 +11,46 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <nav class="fixed w-full h-[50px] m-0 bg-emerald-500 flex">
-        <ul class="absolute m-0 w-auto flex right-0 bg-red-500">
-          <li class="inline-block">
-            <a class="no-underline" href="jelajahi.html">Jelajahi</a>
-          </li>
-          <li class="inline-block">
-            <a class="no-underline" href="about.html">About</a>
-          </li>
-        </ul>
-
-        <div class="logo z-10 absolute">
-          <h1>AKU SUKA DIA</h1>
+      <nav class="fixed w-full h-[50px] m-0 bg-red-400 items-center flex p-5">
+        <div>
+          <h1 class="bg-green-400">SINAUPAL</h1>
         </div>
+        <div class="bg-red-700">
+          <ul class="m-0 w-auto flex right-0 gap-3">
+            <li class="inline-block">
+              <a class="no-underline" href="home.html">Home</a>
+            </li>
+            <li class="inline-block">
+              <a class="no-underline" href="content.html">Content</a>
+            </li>
+            <li class="inline-block">
+              <a class="no-underline" href="content.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <!-- DARKMODE -->
+
+        <div class="flex">
+          <span class="mr-2 text-sm text-slate-500">light</span>
+          <input type="chekbox" class="hidden" id="dark-toggle" />
+          <label for="dark-toggle">
+            <div
+              class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+            >
+              <div class="toggle-circle h-4 w-4 rounded-full bg-white"></div>
+            </div>
+          </label>
+          <span class="mr-2 text-sm text-slate-500">dark</span>
+        </div>
+
+        <!-- DARKMODE -->
       </nav>
     </header>
+    <div class="h-[900px]">ANJAY</div>
   </body>
 </html>
