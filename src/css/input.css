@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+.hamburger-line {
+  @apply w-[25px] h-[2px] my-[6px] block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+@media screen and (min-width: 768px) {
+  #nav-menu ul li a {
+    font-size: 1rem; /* ganti ukuran teks yang diinginkan */
+  }
+}
