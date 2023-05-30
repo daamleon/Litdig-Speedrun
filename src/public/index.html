@@ -17,34 +17,45 @@
   <body>
     <header>
       <nav
-        class="fixed w-full h-[50px] m-0 backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
+        class="fixed w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
       >
-        <div>
-          <h1">SINAUPAL</h1>
+        <div class="m-5">
+          <h1 class="font-inter font-extrabold">SINAUPAL</h1>
+          <!-- <img class="h-5" src="/img/SINAUPAL.png" alt="" /> -->
         </div>
 
-        <div class="flex items-center px-4">
-          <button id="humberger" name="humberger" type="button" class="block absolute right-4">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="md:hidden mr-5 flex">
+          <button id="hamburger" name="hamburger" type="button" class="block">
+            <span
+              class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+            ></span>
+            <span
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></span>
+            <span
+              class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+            ></span>
           </button>
         </div>
 
-        <div>
-          <ul class="m-0 w-auto flex right-0 gap-3">
-            <li class="inline-block">
-              <a class="no-underline" href="home.html">Home</a>
+        <div
+          id="nav-menu"
+          class="hidden absolute top-full w-full pb-[250px] pl-9 right-7 max-w-[240px] rounded-lg bg-white shadow-lg md:static md:block md:rounded-none md:bg-transparent md:shadow-none"
+        >
+          <ul
+            class="flex flex-col absolute md:right-10 top-8 md:flex-row md:gap-3 md:top-3"
+          >
+            <li class="mb-8">
+              <a class="no-underline text-xl" href="home.html">Home</a>
             </li>
-            <li class="inline-block">
-              <a class="no-underline" href="content.html">Content</a>
+            <li class="mb-8">
+              <a class="no-underline text-xl" href="content.html">Content</a>
             </li>
-            <li class="inline-block">
-              <a class="no-underline" href="content.html">About</a>
+            <li class="mb-8">
+              <a class="no-underline text-xl" href="about.html">About</a>
             </li>
           </ul>
         </div>
-
       </nav>
     </header>
     <div class="py-[100px] h-[900px]">
