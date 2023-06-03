@@ -15,48 +15,46 @@
     </head>
     <body>
       <header>
-        <nav
-          class="fixed w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
+      <nav
+        class="fixed z-10 w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
+      >
+        <div class="m-5">
+          <h1 class="font-inter font-extrabold">SINAUPAL</h1>
+          <!-- <img class="h-5" src="/img/SINAUPAL.png" alt="" /> -->
+        </div>
+
+        <div class="sm:hidden mr-5 flex">
+          <button id="hamburger" name="hamburger" type="button" class="block">
+            <span
+              class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+            ></span>
+            <span
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></span>
+            <span class="hamburger-line transition duration-300 ease-in-out
+            origin-bottom-left"
+          </button>
+        </div>
+      </nav>
+      <div
+        id="nav-menu"
+        class="z-20 hidden fixed w-[50%] h-auto right-10 top-[50px] sm:block sm:top-[9px] sm:right-0"
+      >
+        <ul
+          class="items-center justify-center flex absolute flex-col gap-4 w-[100%] h-[350px] top-5 rounded-lg shadow-lg bg-slate-100 sm:rounded-none sm:bg-transparent sm:shadow-none sm:flex-row sm:backdrop-blur-none sm:w-auto sm:h-auto sm:right-10 sm:top-0"
         >
-          <div class="m-5">
-            <h1 class="font-inter font-extrabold">SINAUPAL</h1>
-            <!-- <img class="h-5" src="/img/SINAUPAL.png" alt="" /> -->
-          </div>
-
-          <div class="sm:hidden mr-5 flex">
-            <button id="hamburger" name="hamburger" type="button" class="block">
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-          </div>
-
-          <div
-            id="nav-menu"
-            class="hidden absolute top-full w-full pb-[250px] pl-9 right-7 max-w-[240px] rounded-lg bg-white shadow-lg sm:static sm:block sm:rounded-none sm:bg-transparent sm:shadow-none"
-          >
-            <ul
-              class="flex flex-col absolute sm:right-10 top-8 sm:flex-row sm:gap-3 sm:top-3"
-            >
-              <li class="mb-8">
-                <a class="no-underline text-xl" href="home.html">Home</a>
-              </li>
-              <li class="mb-8">
-                <a class="no-underline text-xl" href="content.html">Content</a>
-              </li>
-              <li class="mb-8">
-                <a class="no-underline text-xl" href="about.html">About</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+          <li class="mb-8">
+            <a class="no-underline text-2xl" href="index.html">Home</a>
+          </li>
+          <li class="mb-8">
+            <a class="no-underline text-2xl" href="index.html#down">Content</a>
+          </li>
+          <li class="mb-8">
+            <a class="no-underline text-2xl" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
           <main>
         <div class="w-auto  pt-[120px] bg-[url('/img/bgHero.png')] bg-cover bg-bottom bg-slate-50 max-[500px]:w-full md:pb-[0px] pb-20">
             <div class="flex justify-center flex-col pt-[100px] max-[500px]:w-auto pb-20 md:pb-0">
