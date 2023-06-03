@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html class="scroll-smooth">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
+</head>
+
+<body class="bg-slate-50 font-inter">
     <header>
-      <nav
-        class="fixed z-10 w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
-      >
-        <div class="m-5">
-          <h1 class="font-inter font-extrabold">SINAUPAL</h1>
-          <!-- <img class="h-5" src="/img/SINAUPAL.png" alt="" /> -->
-        </div>
+        <nav
+            class="fixed z-10 w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5">
+            <div class="m-5">
+                <h1 class="font-inter font-extrabold">SINAUPAL</h1>
+                <!-- <img class="h-5" src="/img/SINAUPAL.png" alt="" /> -->
+            </div>
 
-        <div class="sm:hidden mr-5 flex">
-          <button id="hamburger" name="hamburger" type="button" class="block">
-            <span
-              class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-            ></span>
-            <span
-              class="hamburger-line transition duration-300 ease-in-out"
-            ></span>
-            <span class="hamburger-line transition duration-300 ease-in-out
-            origin-bottom-left"
-          </button>
-        </div>
-      </nav>
-      <div
-        id="nav-menu"
-        class="z-20 hidden fixed w-[50%] h-[100%] right-10 top-[50px] sm:block sm:top-[9px] sm:right-0"
-      >
-        <ul
-          class="items-center justify-center flex absolute flex-col gap-4 w-[100%] h-[350px] top-5 rounded-lg shadow-lg bg-slate-100 sm:rounded-none sm:bg-transparent sm:shadow-none sm:flex-row sm:backdrop-blur-none sm:w-auto sm:h-auto sm:right-10 sm:top-0"
-        >
-          <li class="mb-8">
-            <a class="no-underline text-2xl" href="home.html">Home</a>
-          </li>
-          <li class="mb-8">
-            <a class="no-underline text-2xl" href="content.html">Content</a>
-          </li>
-          <li class="mb-8">
-            <a class="no-underline text-2xl" href="about.html">About</a>
-          </li>
-        </ul>
-      </div>
+            <div class="sm:hidden mr-5 flex">
+                <button id="hamburger" name="hamburger" type="button" class="block">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out
+            origin-bottom-left" </button> </div> </nav> <div id="nav-menu"
+                        class="z-20 hidden fixed w-[50%] h-[100%] right-10 top-[50px] sm:top-[9px] sm:right-0">
+                        <ul
+                            class="items-center justify-center flex absolute flex-col gap-4 w-[100%] h-[350px] top-5 rounded-lg shadow-lg bg-slate-100 sm:rounded-none sm:bg-transparent sm:shadow-none sm:flex-row sm:backdrop-blur-none sm:w-auto sm:h-auto sm:right-10 sm:top-0">
+                            <li class="mb-8">
+                                <a class="no-underline text-2xl" href="index.html">Home</a>
+                            </li>
+                            <li class="mb-8">
+                                <a class="no-underline text-2xl" href="msword.html">Content</a>
+                            </li>
+                            <li class="mb-8">
+                                <a class="no-underline text-2xl" href="about.html">About</a>
+                            </li>
+                        </ul>
+            </div>
     </header>
+
     <main>
         <div class="w-full h-screen pt-[25%] md:pt-[20%] lg:pt-[17.5%] xl:pt-[10%] bg-[url('/img/bgHero.png')]  bg-cover bg-bottom
             md:[background-position-y:-1250px] lg:[background-position-y:-1850px] lg:[background-position-x:150px]
@@ -104,15 +93,15 @@
             </h1>
         </div>
 
-        <div
-            class="mt-[10%] mb-[10%] lg:mt-[10%] flex flex-col justify-center items-center bg-[url('/img/bgHero.png')]
-            md:[background-position-y:-250px] lg:[background-position-y:-400px] xl:h-full xl:pt-[0%] xl:mt-0 xl:grid
-            xl:grid-cols-2 xl:bg-[url('/img/bgHero_rotate.png')] xl:[background-position-y:0px] xl:[background-position-x:0px] xl:bg-bottom bg-cover bg-bottom bg-no-repeat">
+        <div class="mt-[10%] mb-[10%] lg:mt-[10%] flex flex-col justify-center items-center bg-[url('/img/bgHero.png')]
+            md:[background-position-y:-250px] lg:h-full lg:pt-[0%] lg:grid place-items-center
+            lg:grid-cols-2 lg:bg-[url('/img/bgHero_rotate.png')] lg:[background-position-y:0px]
+            lg:[background-position-x:0px] lg:bg-bottom bg-cover bg-bottom bg-no-repeat">
 
             <!--Card-->
             <div class="w-3/4 md:w-[70%] xl:w-[80%] backdrop-filter backdrop-blur-sm bg-white/50 rounded-xl backdrop-saturate-200 h-auto drop-shadow-md xl:drop-shadow-none
                 mb-6 lg:mb-[2rem] hover:scale-110 duration-150 xl:ml-[15%]">
-                <a href="" class="grid grid-cols-2">
+                <a href="msword.html" class="grid grid-cols-2 w-full">
                     <!--Title-->
                     <div class="col-span-2 mt-3 lg:mt-7 mx-auto mb-2">
                         <h1
@@ -140,7 +129,7 @@
             <!--Card-->
             <div class="w-3/4 md:w-[70%] xl:w-[80%] backdrop-filter backdrop-blur-sm bg-white/50 rounded-xl backdrop-saturate-200 h-auto drop-shadow-md xl:drop-shadow-none
                 mb-6 lg:mb-[2rem] hover:scale-110 duration-150 xl:mr-[15%]">
-                <a href="" class="grid grid-cols-2">
+                <a href="" class="grid grid-cols-2 w-full">
                     <!--Title-->
                     <div class="col-span-2 mt-3 mx-auto mb-2">
                         <h1
@@ -168,7 +157,7 @@
             <!--Card-->
             <div class="w-3/4 md:w-[70%] xl:w-[80%] backdrop-filter backdrop-blur-sm bg-white/50 rounded-xl backdrop-saturate-200 h-auto drop-shadow-md xl:drop-shadow-none
                 mb-6 lg:mb-[2rem] hover:scale-110 duration-150 xl:ml-[15%]">
-                <a href="" class="grid grid-cols-2">
+                <a href="" class="grid grid-cols-2 w-full">
                     <!--Title-->
                     <div class="col-span-2 mt-3 mx-auto mb-2">
                         <h1
@@ -208,5 +197,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
