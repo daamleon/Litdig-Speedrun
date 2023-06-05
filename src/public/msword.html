@@ -1,175 +1,313 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="style.css" rel="stylesheet" />
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <header>
-        <nav
-          class="fixed w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="fixed z-10 border-b border-slate-900/10 w-full h-[50px] backdrop-filter backdrop-blur-sm bg-black/5 items-center justify-between flex p-5"
+      >
+        <div class="p-5">
+          <h1"><span
+              class="font-black text-transparent bg-clip-text bg-gradient-to-r from-[#6c33f2] to-[#8c33f2]"
+              >SINAU</span
+            ><span
+              class="font-black text-transparent bg-clip-text bg-gradient-to-r from-[#a633f2] to-[#8724c9]"
+              >PAL</span
+            ></h1>
+          <!-- <img class="w-[100px] h-[5px]" src="/img/sinaupal (2).png" alt="" /> -->
+        </div>
+
+        <div class="sm:hidden mr-5 flex">
+          <button id="hamburger" name="hamburger" type="button" class="block">
+            <span
+              class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+            ></span>
+            <span
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></span>
+            <span class="hamburger-line transition duration-300 ease-in-out
+            origin-bottom-left"
+          </button>
+        </div>
+      </nav>
+      <div
+        id="nav-menu"
+        class="z-20 hidden fixed w-[100%] h-[100%] top-[50px] sm:block sm:top-[9px] sm:right-0 sm:bg-transparent backdrop-filter backdrop-blur-sm bg-white/5 sm:backdrop-blur-none sm:w-0 sm:h-0"
+      >
+        <ul
+          class="items-center justify-center flex fixed flex-col gap-4 w-[50%] h-[350px] right-10 top-5 rounded-lg shadow-lg bg-gray-50 sm:rounded-none sm:bg-transparent sm:shadow-none sm:flex-row sm:backdrop-blur-none sm:w-auto sm:h-auto sm:right-10 sm:top-0"
         >
-          <div class="m-5">
-            <h1 class="font-inter font-extrabold">SINAUPAL</h1>
-            <!-- <img class="h-5" src="/img/SINAUPAL.png" alt="" /> -->
-          </div>
+          <li class="mb-8">
+            <a class="no-underline text-2xl" href="index.html">Home</a>
+          </li>
+          <li class="mb-8">
+            <a class="no-underline text-2xl" href="index.html#down">Content</a>
+          </li>
+          <li class="mb-8">
+            <a class="no-underline text-2xl" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-          <div class="sm:hidden mr-5 flex">
-            <button id="hamburger" name="hamburger" type="button" class="block">
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-          </div>
-
-          <div
-            id="nav-menu"
-            class="hidden absolute top-full w-full pb-[250px] pl-9 right-7 max-w-[240px] rounded-lg bg-white shadow-lg sm:static sm:block sm:rounded-none sm:bg-transparent sm:shadow-none"
+    <main class="font-inter">
+      <div
+        class="w-screen h-full pt-[7.5%] pb-[35%] md:pb-[5%] mb-[5%] bg-[url('/img/bgHero.png')] md:[background-position-y:-1250px] bg-cover bg-center"
+      >
+        <div
+          class="flex justify-center items-center flex-col pt-[100px] max-[500px]:w-auto pb-20 md:pb-0"
+        >
+          <h1
+            class="font-inter px-2 font-extrabold text-[3rem] leading-[3.5rem] md:text-[3.3rem] md:leading-[3.5rem] lg:text-[4.45rem] lg:leading-[5rem] xl:text-[4.75rem] xl:leading-[5.1rem] text-slate-700 text-center"
           >
-            <ul
-              class="flex flex-col absolute sm:right-10 top-8 sm:flex-row sm:gap-3 sm:top-3"
+            Time To Learn
+            <span
+              class="font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-400"
             >
-              <li class="mb-8">
-                <a class="no-underline text-xl" href="home.html">Home</a>
+              Microsoft Word</span
+            >
+          </h1>
+          <div class="w-full mt-[10%] md:mt-[5%] flex md:pb-10">
+            <a
+              href="#down"
+              class="flex justify-center items-center w-2/4 h-10 lg:w-3/5 lg:h-16 rounded-full bg-blue-700 text-slate-100 font-extrabold text-base text-center lg:text-2xl m-auto"
+              >Ayo Baca!</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="down"
+        class="flex flex-row w-full justify-center items-center max-lg:flex-col max-md:p-[25px] max-sm:mb-[25px] md:p-10"
+      >
+        <div class="justify-center pr-[75px] max-[1024px]:pr-0">
+          <h2
+            class="text-left font-inter font-extrabold text-[2.5rem] leading-[3rem] lg:text-[2.9rem] lg:leading-[3.4rem] max-[1024px]:text-center pb-5"
+          >
+            Apa itu<br />
+            <span>Microsoft Word ?</span>
+          </h2>
+        </div>
+        <div class="pl-[75px] max-lg:pl-0">
+          <h2
+            class="font-sans md:text-[1.85rem] md:leading-[2.15rem] font-light text-justify lg:w-[525px] max-sm:pb-[50px] text-[1.45rem] md:px-5"
+          >
+            Microsoft word aplikasi pengolah kata yang digunakan untuk membuat,
+            mengedit, dan memformat dokumen teks seperti surat, memo, laporan,
+            atau dokumen resmi lainnya.
+          </h2>
+        </div>
+      </div>
+      <div class="flex flex-col w-full mt-20 md:mt-0">
+        <!--introduce fungsi-->
+        <div class="flex pt-[35px] md:pt-[150px] flex-col items-center">
+          <h2
+            class="font-sans text-[2rem] md:text-[2.54rem] md:leading-[3rem] lg:text-[2.9rem] lg:leading-[3.25rem] font-extrabold text-slate-900 sm:pb-[25px] lg:pb-[50px] px-3 md:px-6 lg:px-9 text-center"
+          >
+            Apa Saja sih
+            <span class="bg-blue-600 bg-clip-text text-transparent"
+              >Fungsi</span
+            >
+            Microsoft Office Word ?
+          </h2>
+        </div>
+      </div>
+      <section class="w-full ">
+        <!--card try-->
+        <div
+          class="grid grid-cols-2 justify-center place-items-center items-center gap-4 place-content-center max-md:flex-col max-md:flex max-md:p-[12px] min-[960px]:w-[100%] min-[960px]:px-[150px]"
+        >
+          <div
+            class="inline-block rounded-lg p-6 bg-inherit w-auto place-content-center h-full"
+          >
+            <p class="font-sans text-justify text-[1.25rem]">
+              1. Mengetik dan mengedit teks: Microsoft Word memungkinkan
+              pengguna untuk mengetik dan mengedit teks dengan mudah. Pengguna
+              dapat mengubah font, ukuran huruf, warna, dan tata letak teks
+              sesuai dengan keinginan.
+            </p>
+          </div>
+          <div
+            class="inline-block rounded-lg p-6 bg-inherit w-auto place-content-center h-full"
+          >
+            <p class="font-sans text-justify text-[1.25rem]">
+              2. Memformat dokumen: Pengguna dapat memformat dokumen dengan
+              menambahkan heading, subheading, paragraf, bullet point, dan
+              lain-lain. Microsoft Word juga menyediakan berbagai macam fitur
+              untuk mengatur tata letak dokumen seperti margin, spasi, dan
+              orientasi halaman.
+            </p>
+          </div>
+          <div
+            class="inline-block rounded-lg p-6 bg-inherit w-auto place-content-center h-full"
+          >
+            <p class="font-sans text-justify text-[1.25rem]">
+              3. Menyisipkan gambar dan objek: Selain teks, pengguna juga dapat
+              menyisipkan gambar, tabel, grafik, dan objek multimedia lainnya ke
+              dalam dokumen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+<!--introduce make document-->
+  <div class="flex flex-col w-full mt-20 md:mt-0">
+        <div class="flex pt-[35px] md:pt-[150px] flex-col items-center">
+          <h2
+            class="font-sans text-[2rem] md:text-[2.54rem] md:leading-[3rem] lg:text-[2.9rem] lg:leading-[3.25rem] font-extrabold text-slate-900 sm:pb-[25px] lg:pb-[50px] px-3 md:px-6 lg:px-9 text-center"
+          >
+            Mulai buat
+            <span class="bg-blue-600 bg-clip-text text-transparent"
+              >dokumen</span
+            > anda
+            
+          </h2>
+        </div>
+      </div>
+
+      <!-- Make document -->
+      <section class="w-full">
+        
+        <div
+          class="grid grid-col justify-center place-items-center items-center gap-4 content-center max-md:flex-col max-md:flex max-md:p-[12px] min-[960px]:w-[100%]"
+        >
+          <div
+            class="inline-block rounded-lg p-6 bg-inherit w-auto place-content-center h-full"
+          >
+          <div class="flex justify-center pb-4">
+            <img src="./img/Content/blank doc.png" alt=""
+            class="w-full md:w-[75%]">
+          </div>
+          <div class="flex p-0 md:pl-10 lg:pl-[150px] xl:pl-[225px]">
+            <ol class="list-decimal pl-6 mt-3">
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.25rem] max-sm:text-[1.1rem]">
+                  Buka Microsoft Word.
+                </p>
               </li>
-              <li class="mb-8">
-                <a class="no-underline text-xl" href="content.html">Content</a>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.25rem] max-sm:text-[1.1rem]">
+                  Klik pada tab "File" di bagian atas kiri layar
+                </p>
               </li>
-              <li class="mb-8">
-                <a class="no-underline text-xl" href="about.html">About</a>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.25rem] max-sm:text-[1.1rem]">
+                  Pilih opsi "New" dari menu yang muncul.
+                </p>
               </li>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.25rem] max-sm:text-[1.1rem]">
+                  Pilih template dokumen yang ingin Anda buat, atau klik "Blank document" untuk membuat dokumen kosong.
+                </p>
+              </li>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.25rem] max-sm:text-[1.1rem]">
+                  Mulai mengetik dokumen Anda.
+                </p>
+              </li>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.25rem] max-sm:text-[1.1rem]">
+                  Jika Anda ingin menyimpan dokumen, klik pada tab "File" dan pilih "Save As".
+                </p>
+              </li>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.15rem] max-sm:text-[1.1rem]">
+                  Berikan nama file dan pilih lokasi penyimpanan di komputer Anda.
+                </p>
+              </li>
+              <li class="mb-3">
+                <p class="font-sans text-justify text-[1.15rem]">
+                  Klik "Save" untuk menyimpan dokumen Anda.
+                </p>
+              </li>
+            </ol>
+          </div>
+  
+           
+          </div>
+         
+        </div>
+      </section>
+
+      <div class="w-full">
+        <!--Introduce Article-->
+        <section class="flex justify-center pt-[120px] w-auto pb-[50px]">
+          <h2
+            class="font-sans text-[2rem] leading-10 md:text-[2.5rem] md:leading-[2.85rem] lg:text-[2.9rem] lg:leading-[3.2rem] font-bold px-5 lg:px-10 text-slate-900 pb-[50px] md:pb-0 text-center"
+          >
+            Ingin  
+              <span class="bg-blue-700 bg-clip-text text-transparent">belajar</span> lebih banyak mengenai <span class="bg-blue-700 bg-clip-text text-transparent">Microsoft Office Word?</span>
+          </h2>
+        </section>
+
+        <!--List Articles-->
+        <section class="">
+          <div class="flex justify-center pb-[100px] px-5 box-border">
+            <ul
+              class="list-none flex flex-col md:grid md:grid-cols-2 gap-2 lg:grid lg:grid-cols-3 justify-center place-items-center items-center lg:px-[125px]"
+            >
+              <a
+                href=""
+                class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans lg:w-[100%] text-[1.5rem] max-md:text-[1.4rem]"
+              >
+                <li>How to Refference</li>
+              </a>
+              <a
+                href=""
+                class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans lg:w-[100%] text-[1.5rem] max-md:text-[1.4rem]"
+              >
+                <li>How to Auto list</li>
+              </a>
+              <a
+                href=""
+                class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans lg:w-[100%] text-[1.5rem] max-md:text-[1.4rem]"
+              >
+                <li>How to Format pointer</li>
+              </a>
+              <a
+                href=""
+                class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans lg:w-[100%] text-[1.5rem] max-md:text-[1.4rem]"
+              >
+                <li>How to Compare document</li>
+              </a>
+              <a
+                href=""
+                class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans lg:w-[100%] text-[1.5rem] max-md:text-[1.4rem]"
+              >
+                <li>Tools untuk desain grafis</li>
+              </a>
             </ul>
           </div>
-        </nav>
-      </header>
-          <main>
-        <div class="w-auto  pt-[120px] bg-[url('/img/bgHero.png')] bg-cover bg-bottom bg-slate-50 max-[500px]:w-full md:pb-[0px] pb-20">
-            <div class="flex justify-center flex-col pt-[100px] max-[500px]:w-auto pb-20 md:pb-0">
-                <h1 
-                    class="font-inter font-extrabold text-[2.6rem] leading-[3rem] md:text-[3.3rem] md:leading-[3.5rem]
-                    lg:text-[4.1rem] lg:leading-[4.75rem] xl:text-[4.75rem] xl:leading-[5.1rem] text-center w-screen px-8 text-slate-700
-                    mb-20 max-sm:text-left">
-                    Time To Learn <span 
-                    class="font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-400">
-                    Microsoft Word</span>
-            </h1>
-        </div>
-    </div>
-    <div class="flex-row w-full flex p-[125px] justify-center max-lg:flex-col max-md:p-[25px] max-sm:mb-[25px]">
-      <div class="justify-center pr-[75px] max-[1024px]:pr-0 ">
-        <h2 class="text-left font-inter font-bold text-[2.4rem] max-md:text-[2.2rem] max-[1024px]:text-center pb-5 ">
-          Apa itu<br> 
-          <span
-          
-          >Microsoft Word ?</span>
-        </h2>
-      </div>
-      <div class="pl-[75px] max-lg:pl-0">
-        <h2 class="font-sans sm:text-[1.9rem] md:text-[2.25rem] font-medium text-justify lg:w-[525px] max-sm:pb-[50px] text-[1.65rem]">
-          Microsoft word aplikasi pengolah kata yang digunakan untuk
-          membuat, mengedit, dan memformat dokumen teks seperti surat, memo, laporan, atau dokumen resmi lainnya.
-        </h2>
-      </div> 
-    </div>
-        <div class="flex flex-col w-full mt-20 md:mt-0">
-          <!--introduce fungsi-->
-          <div class="flex pt-[75px] md:pt-[150px] flex-col  items-center ">
-            <h2 class="font-sans text-[1.9rem] md:text-[2.4rem] font-bold text-slate-900 pb-[150px] text-center">
-              Apa Saja sih <span class="bg-blue-600 bg-clip-text text-transparent">Fungsi</span> Microsoft Office Word ?
-            </h2>
-          </div>
-      
-        </div>
-        <section class="w-full">
-          <!--card try-->
-              <div class="grid grid-cols-2 justify-center place-items-center items-center gap-4 content-center max-md:flex-col max-md:flex max-md:p-[12px] min-[960px]:w-[100%]">
-                <div class="inline-block rounded-lg p-6  bg-inherit w-auto min-[960px]:w-[75%] place-content-center h-full">
-                  <p class="font-sans text-justify text-[1.5rem]  max-md:text-[1.4rem]">
-                    1. Mengetik dan mengedit teks: Microsoft Word memungkinkan pengguna untuk mengetik dan mengedit teks dengan mudah.
-                    Pengguna dapat mengubah font, ukuran huruf, warna, dan tata letak teks sesuai dengan keinginan.
-                  </p>
-                </div>
-                <div class="inline-block rounded-lg p-6  bg-inherit w-auto min-[960px]:w-[75%] place-content-center h-full">
-                  <p class="font-sans text-justify text-[1.5rem] max-md:text-[1.4rem]">
-                    2. Memformat dokumen: Pengguna dapat memformat dokumen dengan menambahkan heading, subheading, paragraf, bullet point, dan lain-lain. 
-                    Microsoft Word juga menyediakan berbagai macam fitur untuk mengatur tata letak dokumen seperti margin, spasi, dan orientasi halaman.
-                  </p>
-                </div>
-                <div class="inline-block rounded-lg p-6  bg-inherit w-auto min-[960px]:w-[75%] place-content-center h-full">
-                  <p class="font-sans text-justify text-[1.5rem]  max-md:text-[1.4rem]">
-                    3. Menyisipkan gambar dan objek: Selain teks, pengguna juga dapat menyisipkan gambar, tabel, grafik, dan objek multimedia lainnya ke dalam dokumen.
-                  </p>
-                </div>
-              </div>
-       
         </section>
-        <div class="w-full">
-          <!--Introduce Article-->
-          <section class="flex justify-center pt-[120px] w-auto pb-[150px]">
-            <h2 class="font-sans text-[2.4rem] max-md:text-[2.2rem] font-bold text-slate-900 pb-[150px] text-center">
-              Apa sih <span class="bg-blue-700 bg-clip-text text-transparent">Tools</span> yang perlu diketahui pada Microsoft Word
-            </h2>
-          </section>
-          <!--List Articles-->
-          <section class="">
-            <div class="flex justify-center  pb-[100px]">
-              <ul class="list-none flex flex-col gap-2 lg:grid lg:grid-cols-3 lg:w-full lg:h-full justify-center place-items-center items-center lg:px-[125px]">
-                <a href="" 
-                  class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans min-[950px]:w-[75%] text-[1.5rem] max-md:text-[1.4rem]">
-                  <li>How to Refference</li>
-                </a>
-                <a href="" class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans min-[950px]:w-[75%] text-[1.5rem] max-md:text-[1.4rem]">
-                  <li>
-                    How to Auto list
-                  </li>
-                </a>
-                <a href="" class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans min-[950px]:w-[75%] text-[1.5rem] max-md:text-[1.4rem]">
-                  <li >
-                    How to Format pointer
-                  </li>
-                </a>
-                <a href="" class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans min-[950px]:w-[75%] text-[1.5rem] max-md:text-[1.4rem]">
-                  <li >
-                    How to Compare document
-                  </li>
-                </a>
-                <a href="" class="block rounded-lg p-5 bg-blue-400 w-full h-full text-center font-sans min-[950px]:w-[75%] text-[1.5rem] max-md:text-[1.4rem]">
-                  <li >
-                    Tools untuk desain grafis
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </main>
-     <footer>
-        <div class="bg-[#10172B] flex items-center justify-center px-3">
-            <h1
-                class="text-neutral-50 text-center font-inter font-semibold py-[5%] text-base md:text-xl lg:text-3xl px-10">
-                Ingin
-                Memberikan
-                saran atau
-                sekedar
-                menyapa kami ? <a href='mailto:sinaupal@gmail.com' class="text-lime-300">Klik Disini</a>
-            </h1>
-        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="bg-[#10172B] flex items-center justify-center px-3">
+        <h1
+          class="text-neutral-50 text-center font-inter font-semibold py-[5%] text-base md:text-xl lg:text-3xl px-10"
+        >
+          Ingin Memberikan saran atau sekedar menyapa kami ?
+          <a href="mailto:sinaupal@gmail.com" class="text-lime-300"
+            >Klik Disini</a
+          >
+        </h1>
+      </div>
     </footer>
-    </body>
-   
+    <script src="script.js"></script>
+  </body>
 </html>
