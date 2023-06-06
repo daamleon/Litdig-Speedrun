@@ -589,6 +589,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -717,6 +721,10 @@ video {
   height: 100vh;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-2\/4 {
   width: 50%;
 }
@@ -789,6 +797,10 @@ video {
 
 .list-decimal {
   list-style-type: decimal;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .list-none {
@@ -1108,6 +1120,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-2 {
@@ -2163,6 +2180,10 @@ body {
     width: 100%;
   }
 
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .lg\:w-\[50\%\] {
     width: 50%;
   }
@@ -2388,6 +2409,10 @@ body {
     width: 80%;
   }
 
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .xl\:bg-\[url\(\'\/img\/bgHero_rotate\.png\'\)\] {
     background-image: url('/img/bgHero_rotate.png');
   }
@@ -2412,6 +2437,11 @@ body {
     padding-right: 8rem;
   }
 
+  .xl\:px-\[15\%\] {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
   .xl\:pl-\[225px\] {
     padding-left: 225px;
   }
@@ -2432,6 +2462,11 @@ body {
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .xl\:text-\[1\.5rem\] {
