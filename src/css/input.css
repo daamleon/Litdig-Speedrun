@@ -24,4 +24,52 @@ body {
   #nav-menu ul li a {
     font-size: 1rem; /* ganti ukuran teks yang diinginkan */
   }
+  #nav-menu ul {
+  }
+}
+
+.main-container,
+.sinaupal {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+.main-container:hover {
+  filter: none;
+  transition: filter 0.5s ease-in-out;
+}
+
+.sinaupal-keren {
+  position: relative;
+}
+
+.sinaupal-keren::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.sinaupal-keren:hover::before {
+  opacity: 1;
+  animation: sparkle 1.5s linear infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
