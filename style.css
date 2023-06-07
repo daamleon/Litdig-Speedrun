@@ -2267,7 +2267,7 @@ body {
   }
 
   .lg\:bg-\[url\(\'\/img\/bgHero_rotate\.png\'\)\] {
-    background-image: url('/img/bgHero_rotate.png');
+    background-image: url('img/bgHero_rotate.png');
   }
 
   .lg\:bg-bottom {
@@ -2476,7 +2476,7 @@ body {
   }
 
   .xl\:bg-\[url\(\'\/img\/bgHero_rotate\.png\'\)\] {
-    background-image: url('/img/bgHero_rotate.png');
+    background-image: url('img/bgHero_rotate.png');
   }
 
   .xl\:px-2 {
